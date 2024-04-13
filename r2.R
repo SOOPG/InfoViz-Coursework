@@ -30,7 +30,7 @@ line_graph_server <- function(id) {
         geom_line(aes(y = `Renewables (% equivalent primary energy)`, group = Entity, color = Entity)) + # Add a line for each country's renewable energy
         geom_line(aes(y = `Non-Renewables (% equivalent primary energy)`, group = Entity, color = Entity), linetype = "dashed") + # Add a line for each country's non-renewable energy
         theme_minimal() +
-        labs(title = "Renewable vs Non-Renewable Energy Share by Country Over the Years",
+        labs(title = "Renewable vs Non-Renewable Energy Consumption Share by Country Over the Years",
              x = "Year",
              y = "Energy Share (%)")
       
